@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/andre-tan-THJJRUhNlEc-unsplash.jpg");
+    background-size: cover;
+    background-position: center calc(22%);
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+header > h1 {
+    font-size: 2.5em;
+}
+
+header > p, header > h1 {
+    margin: 0px 40px ;
+}
+
+header > p {
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:initial;
+    position: relative;
+    bottom: 17px;
+}
+
+div#search {
+    background-color: #2E2E2F;
+    border-radius: 5px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+input#search-input {
+    border: none;
+    color: #A5A5A5;
+    background-color: #2E2E2F;
+    width: 100%;
+    outline: none;
+}
+
+button#search-btn {
+    padding: 10px 30px;
+    margin: 0;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #4B4B4B;
+    border-radius: 0px 5px 5px 0px;
+}
+
+span#icon {
+    padding: 0px 10px;
+}
+
+div#movies {
+    margin: 40px 0;
+    /* border: 1px solid white; */
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#movies > img {
+    padding-top: 100px;
+    height: 80px;
+}
+
+div#movies > p {
+    color: #2E2E2F;;
+    font-weight: bold;
+}
