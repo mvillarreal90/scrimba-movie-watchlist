@@ -5,7 +5,10 @@ body {
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
+    min-width: 700px;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -39,6 +42,8 @@ header > p {
     margin-top: 10px;
 }
 
+/* MAIN */
+
 main {
     display: flex;
     flex-direction: column;
@@ -48,12 +53,19 @@ main {
     bottom: 17px;
 }
 
+/* SEARCH */
+
 div#search {
     background-color: #2E2E2F;
     border-radius: 5px;
     width: 85%;
+    max-width: 700px;
     display: flex;
     align-items: center;
+}
+
+span#icon {
+    padding: 0px 10px;
 }
 
 input#search-input {
@@ -75,25 +87,88 @@ button#search-btn {
     border-radius: 0px 5px 5px 0px;
 }
 
-span#icon {
-    padding: 0px 10px;
+/* EMPTY SEARCH */
+
+div#empty-search {
+    margin-top: 20%;
+    text-align: center;
 }
 
-div#movies {
-    margin: 40px 0;
-    /* border: 1px solid white; */
+p#message {
+    color: #2E2E2F;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* MOVIES */
+
+div#movies-list {
+    margin: 20px 0;
     width: 85%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-div#movies > img {
+div#movies-list > img {
     padding-top: 100px;
     height: 80px;
 }
 
-div#movies > p {
-    color: #2E2E2F;;
+/* MOVIE CARD */
+
+div.movie-card {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 2px solid #2E2E2F;
+}
+
+img.movie-poster {
+    width: 150px;
+    height: 210px;
+    padding-right: 20px;
+}
+
+div.movie-card-details-header {
+    display: flex;
+}
+
+div.movie-card-details-header > h3 {
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+div.movie-card-details-header > p {
+    padding: 2.5px 0 0 10px;
+}
+
+div.movie-card-details-header > p > span {
+    color: goldenrod;
+    padding-right: 10px;
+}
+
+div.movie-card-details-data {
+    display: flex;
+    align-items: center;
+}
+
+div.movie-card-details-data > button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+div.movie-card-details-data > p {
+    padding-right: 20px;
+    margin: 0;
+}
+
+p.movie-plot {
+    color: #A5A5A5;
 }
