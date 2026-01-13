@@ -34,12 +34,15 @@ header > h1 {
     font-size: 2.5em;
 }
 
-header > p, header > h1 {
+header > a, header > h1 {
     margin: 0px 40px ;
 }
 
-header > p {
+header > a {
     margin-top: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -87,17 +90,25 @@ button#search-btn {
     border-radius: 0px 5px 5px 0px;
 }
 
-/* EMPTY SEARCH */
+/* EMPTY SEARCH / LIST*/
 
-div#empty-search {
+div#empty-search,
+div#empty-list {
     margin-top: 20%;
     text-align: center;
+    font-size: 1.3em;
 }
 
 p#message {
     color: #2E2E2F;
     font-weight: bold;
     text-align: center;
+}
+
+div#empty-list > div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 /* MOVIES */
@@ -153,14 +164,14 @@ div.movie-card-details-data {
     align-items: center;
 }
 
-div.movie-card-details-data > button {
+button.plus-btn,
+button.remove-btn {
     border: none;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     font-weight: bold;
     cursor: pointer;
-    margin-left: auto;
     margin-right: 10px;
 }
 
@@ -171,4 +182,10 @@ div.movie-card-details-data > p {
 
 p.movie-plot {
     color: #A5A5A5;
+}
+
+div.movie-action {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
